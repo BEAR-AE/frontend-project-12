@@ -21,10 +21,13 @@ export default [
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
+      'extends': [
+        'plugin:react/recommended',
+      ],
     },
     settings: {
       react: {
-        version: '19.0.0',
+        version: '18.3',
       },
     },
     rules: {
@@ -34,9 +37,6 @@ export default [
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },
-      ],
-      'extends': [
-        'plugin:react/recommended',
       ],
     },
   },
