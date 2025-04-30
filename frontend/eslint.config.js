@@ -3,7 +3,6 @@ import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import stylistic from '@stylistic/eslint-plugin'
-import react from 'eslint-plugin-react'
 
 export default [
   stylistic.configs.recommended,
@@ -22,7 +21,6 @@ export default [
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
-      'extends': react,
     },
     rules: {
       ...js.configs.recommended.rules,
@@ -31,6 +29,9 @@ export default [
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },
+      ],
+      'extends': [
+        'plugin:react/recommended',
       ],
     },
   },
