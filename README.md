@@ -1,6 +1,9 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/BEAR-AE/frontend-project-12/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/BEAR-AE/frontend-project-12/actions)
 
+### render 
+https://frontend-project-12-qsr3.onrender.com
+
 ## Описание
 
 Chat Slack — приложение для обмена сообщениями. Разработано с использованием библиотеки React в связке с Redux Toolkit. 
