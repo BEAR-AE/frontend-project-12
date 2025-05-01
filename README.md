@@ -42,26 +42,22 @@ Chat Slack — приложение для обмена сообщениями. 
 git clone https://github.com/BEAR-AE/frontend-project-12.git
 ```
 
-2. Установить зависимости:
+2. Установить: Node.js и npm.
+
+3. Установить зависимости:
 
 ```
 make install
 ```
 
-3. Запуск сервера:
-
-```
-make start
-```
-
-4. Запуск frontend:
-
-```
-make start-frontend
-```
-
-5. Build проекта:
+3. Сборка проекта:
 
 ```
 make build
+```
+
+4. Запуск сервера:
+
+```
+make start
 ```
