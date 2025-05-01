@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useRollbar } from '@rollbar/react'
 import React, { useEffect, useRef, useState } from 'react'
 import { useDispatch } from 'react-redux'
