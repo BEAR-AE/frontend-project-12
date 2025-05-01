@@ -28,7 +28,6 @@ Chat Slack — приложение для обмена сообщениями. 
 - React
 - Redux Toolkit
 - React-Bootstrap
-- WebSocket
 - i18next
 - Yup
 - Formik
