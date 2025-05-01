@@ -1,8 +1,8 @@
-import { object, string } from 'yup'
+import { object, string } from 'yup';
 
 const messageSchema = object().shape({
   message: string().trim().required('validation.required'),
-})
+});
 
 const getChannelNameSchema = channels => object().shape({
   name: string()
@@ -11,7 +11,7 @@ const getChannelNameSchema = channels => object().shape({
     .min(3, 'validation.min')
     .max(20, 'validation.max')
     .notOneOf(channels, 'validation.uniq'),
-})
+});
 
 const signUpSchema = object().shape({
   username: string()
@@ -29,10 +29,10 @@ const signUpSchema = object().shape({
       'validation.passwordMustMatch',
       (value, context) => value === context.parent.password,
     ),
-})
+});
 
 export {
   messageSchema,
   getChannelNameSchema,
   signUpSchema,
-}
+};

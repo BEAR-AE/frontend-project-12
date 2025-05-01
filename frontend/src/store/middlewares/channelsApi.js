@@ -1,18 +1,18 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import routes from '../../utilites/routes.js'
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import routes from '../../utilites/routes.js';
 
 const channelsApi = createApi({
   reducerPath: 'channelsApi',
   baseQuery: fetchBaseQuery({
     baseUrl: routes.channelsPath(),
     prepareHeaders: (headers, { getState }) => {
-      const { auth: { userToken } } = getState()
+      const { auth: { userToken } } = getState();
 
       if (userToken) {
-        headers.set('Authorization', `Bearer ${userToken}`)
+        headers.set('Authorization', `Bearer ${userToken}`);
       }
 
-      return headers
+      return headers;
     },
   }),
   tagTypes: ['Channels'],
@@ -44,6 +44,6 @@ const channelsApi = createApi({
       invalidatesTags: ['Channels'],
     }),
   }),
-})
+});
 
-export default channelsApi
+export default channelsApi;

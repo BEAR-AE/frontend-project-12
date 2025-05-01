@@ -37,11 +37,6 @@
     "socket.io-client": "^4.8.1",
     "yup": "^1.6.1"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app"
-    ]
-  },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
     "@stylistic/eslint-plugin": "^4.2.0",
