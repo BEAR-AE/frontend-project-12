@@ -2,9 +2,11 @@ import js from '@eslint/js'
 import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
+import stylistic from '@stylistic/eslint-plugin'
 
 export default [
   { ignores: ['dist'] },
+  stylistic.configs.recommended,
   {
     files: ['**/*.{js,jsx}'],
     languageOptions: {
