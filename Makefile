@@ -13,9 +13,6 @@ start-backend:
 start:
 	make start-backend
 
-develop:
-	make start-backend & make start-frontend
-
 build:
 	rm -rf frontend/dist
 	npm run build
