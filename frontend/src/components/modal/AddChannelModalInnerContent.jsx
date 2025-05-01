@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useRollbar } from '@rollbar/react'
 import { useFormik } from 'formik'
 import leoProfanity from 'leo-profanity'
